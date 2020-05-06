@@ -1,0 +1,26 @@
+$fontColorBase :#fffc;
+$backgroundBase: #566573;
+$borderColorBase : #fff7;
+$hoverColor : #fff3;
+
+@font-face{
+    font-family: "Vazir Light";
+    src: url(./../../fonts/Vazir-Light.ttf);
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    direction: rtl;
+    font-size: 16px;
+    font-family: "Vazir Light";
+    background-color:  $backgroundBase ;
+}
+
+@import "./../parts/navigation.scss";
+
+

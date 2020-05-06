@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Vazir Light";
+  src: url(./../../fonts/Vazir-Light.ttf);
+  font-size: 16px; }
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  direction: rtl;
+  font-size: 16px;
+  font-family: "Vazir Light";
+  background-color: #566573; }
+
+nav {
+  width: 100%;
+  padding: 0 20px;
+  border-bottom: thin solid #fff6;
+  transition: 200ms; }
+  nav div {
+    display: inline-block; }
+  nav .right {
+    display: inline-flex; }
+  nav a {
+    text-decoration: none;
+    color: #fffc; }
+  nav .tab {
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    color: #fffc; }
+    nav .tab:hover {
+      background-color: #fff3; }
+  nav .dropdown {
+    position: relative; }
+    nav .dropdown:hover .dropdown-menu {
+      display: flex;
+      flex-direction: column; }
+  nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 47px;
+    padding: 3px 0;
+    width: 150px;
+    background-color: #566573;
+    border: thin solid #fff7;
+    border-top: 0;
+    border-radius: 0 0 3px 3px;
+    z-index: 200; }
+  nav .dropdown-item {
+    display: block;
+    padding: 10px;
+    border-bottom: thin solid #fff7; }
+    nav .dropdown-item:hover {
+      background-color: #fff3; }
+  nav .dropdown-item:last-child {
+    border: none; }
+  nav .left {
+    float: left; }
+    nav .left .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 350px;
+      height: 40px;
+      border: thin solid #fff7;
+      border-radius: 3px;
+      margin-top: 3px; }
+    nav .left #search-icon {
+      display: flex;
+      justify-content: center;
+      width: 12%;
+      height: 100%;
+      border-left: thin solid #fff7;
+      padding: 10px 0;
+      color: #fffc;
+      cursor: pointer;
+      z-index: 10; }
+      nav .left #search-icon:hover {
+        background-color: #fff3; }
+    nav .left #search-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 88%;
+      height: 100%;
+      padding-right: 10px;
+      border: none;
+      background-color: transparent;
+      color: #fffc;
+      z-index: 5; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,121 @@
+nav{
+    width: 100%;
+    padding: 0 20px;
+    border-bottom: thin solid #fff6;
+    transition: 200ms;
+    
+
+    div{
+        display: inline-block;
+    }
+
+    .right{
+        display: inline-flex;
+    }
+
+
+    a{
+        text-decoration: none;
+        color: $fontColorBase;
+    }
+
+    .tab{
+        display: inline-block;
+        padding: 15px 25px;
+        cursor: pointer;
+        color: $fontColorBase;
+
+        &:hover{
+            background-color: $hoverColor ;
+        }
+    }
+
+    .dropdown{
+        position: relative;
+
+        &:hover .dropdown-menu{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        top: 47px;
+        padding: 3px 0;
+        width: 150px;
+        background-color: $backgroundBase;
+        border: thin solid $borderColorBase;
+        border-top: 0;
+        border-radius: 0 0 3px 3px;
+        z-index: 200;
+
+
+    }
+
+    .dropdown-item{
+        display: block;
+        padding: 10px;
+        border-bottom: thin solid $borderColorBase;
+
+        &:hover{
+            background-color: $hoverColor;
+        }
+    }
+
+    .dropdown-item:last-child{
+        border: none;
+    }
+
+    // left part
+    .left{
+        float: left;
+
+        .search-box{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 40px;
+            border: thin solid $borderColorBase;
+            border-radius: 3px;
+            margin-top: 3px;
+        }
+
+        #search-icon{
+            display: flex;
+            justify-content: center;
+            width: 12%;
+            height: 100%;
+            border-left: thin solid $borderColorBase;
+            padding: 10px 0;
+            color: $fontColorBase;
+            cursor: pointer;
+            z-index: 10;
+
+            &:hover{
+                background-color: $hoverColor;
+            }
+
+        }
+
+
+        #search-input{
+            position: absolute;
+            top:0;
+            left: 0;
+            display: inline-block;
+            width: 88%;
+            height: 100%;
+            padding-right: 10px;
+            border: none;
+            background-color: transparent;
+            color: $fontColorBase;
+            z-index: 5;
+        }
+    }
+
+
+
+}
